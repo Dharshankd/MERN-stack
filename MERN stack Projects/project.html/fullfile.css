@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.full_lay{
+    width: 100%;
+    height: 100vh;
+    
+}
+.shop_1{
+    width: 100%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas: "n"
+    "l";
+}
+
+.nab{
+    background-color: black;
+    grid-area: n;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 180px;
+    grid-template-areas: "lg na";
+}
+.lef{
+    grid-area: l;
+}
+.nal{
+    display: flex;
+    justify-content: right;
+   grid-area: na;
+}
+.mass{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-right: 10px;
+    display: grid;
+}
+.mass:hover{
+    text-decoration: none;
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(184, 54, 54, 0.703);
+    
+
+}
+.tit{
+    grid-area: lg;
+    margin-top: 60px;
+   display: grid;
+  justify-content: center;
+  
+}
+.lo{
+    width: 80%;
+    height: 50%;
+}
+.full{
+    width: 100%;
+    height: 100vh;
+}
+.shop_2{
+    width: 100%;
+    height: 100vh;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas: "lef rig";
+}
+.shop_2_1{
+    grid-area: lef;
+ 
+}
+.shop_2_2{
+    grid-area: rig;
+
+}
+.abt{
+    font-size:70px;
+    color: rgb(240, 95, 42);
+    font-weight: bolder;
+    margin-top: 300px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+   
+}
+.con{
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+   font-style: inherit;
+   font-weight: 400;
+   display: grid;
+   margin-top: 50px;
+}
+.btl{
+    display: grid;
+    font-size: 30px;
+    margin-top: 50px;
+  
+    border-radius: none;
+}
+@media only screen and (max-width:600px) {
+    .shop_2{
+        width: 100%;
+        height: 150vh;
+       
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "lef"
+        "rig";
+    }
+    
+}
+
+.mg{
+        display: grid;
+        margin-top: 150px;
+        
+       justify-content: right;
+}
+@media only screen and (max-width:600px) {
+    .mg{
+        display: grid;
+        margin-top: 150px;
+        
+      
+       width: 100%;
+       height: 80%;
+}
+}
+.fully{
+    width: 100%;
+    height: 100vh;
+}
+.shop_3{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "con"
+    "im";
+}
+.shop_3_1{
+    grid-area: con;
+    
+}
+
+.gal h1{
+    display: grid;
+    font-size: 90px;
+    font-weight: bolder;
+    color: orangered;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.gas{
+    display: grid;
+    font-size: 30px;
+    font-style: inherit;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.shop_3_2{
+    grid-area: im;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c";
+}
+.im1{
+    grid-area: a;
+    
+}
+.im2{
+    grid-area: b;
+    
+}
+.im3{
+    grid-area: c;
+   
+}
+
+@media only screen and (max-width:600px){
+    .shop_3{
+        width: 100%;
+        height: 200vh;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "con"
+        "im";
+    }
+    .shop_3_2{
+        grid-area: im;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "a"
+        "b"
+        "c";
+    }
+    
+}
+.hel{
+    width: 600px;
+    height: 600px; 
+  
+    display: flex;
+   margin: 10px;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+   
+    
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+  
+  
+}
+.hel:hover{
+    width: 600px;
+    height: 600px;
+   
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+      
+   
+}
+.shop_4{
+    width: 100%;
+    height: 60vh;
+   background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "e f g h";
+    color: white;
+}
+.shop_4_1{
+    grid-area: e;
+    
+}
+.shop_4_2{
+    grid-area: f;
+   
+}
+.shop_4_3{
+    grid-area: g;
+   
+}
+.shop_4_4{
+    grid-area: h;
+ 
+}
+@media  only screen and (max-width:600px) {
+    .shop_4{
+        width: 100%;
+        height: 140vh;
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 2fr);
+        grid-template-areas: "e f"
+        "g h";
+    }
+}
+.ab h1{
+    font-size: 40px;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.ab p{
+    font-size: 30px;
+    margin-top: 80px;
+    display: grid;
+    justify-content: center;
+    margin-left: 20px;
+}
+.men h1{
+    font-size: 40px;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.men p{
+    font-size: 30px;
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+}
+.use h1{
+    font-size: 40px;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.use p{
+    font-size: 30px;
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+}
+.cont h1{
+    font-size: 40px;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cont p{
+    font-size: 30px;
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+}
+.shop_5{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "u"
+    "p";
+
+    
+}
+.shop_5_1{
+    grid-area: u;
+  
+}
+.shop_5_2{
+    grid-area: p;
+}
+.shop_im_1{
+    width: 100%;
+    height: 100vh;
+}
